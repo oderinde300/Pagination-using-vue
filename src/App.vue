@@ -1,16 +1,17 @@
 <template>
   <main>
-    <TheUser />
-    <h1>Hello World</h1>
+    <main-nav />
+    <router-view />
   </main>
 </template>
 
 <script>
-import TheUser from "@/components/TheUser.vue";
+import MainNav from "@/components/MainNav.vue";
+
 export default {
   name: "App",
   components: {
-    TheUser,
+    MainNav,
   },
 };
 </script>
